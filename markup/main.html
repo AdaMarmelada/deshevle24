@@ -32,7 +32,7 @@
         <div class="header-part">
             <div class="container">
                 <div flex-align="center" flex-wrap="wrap">
-                    <a href="#" class="header-menu_btn">
+                    <a href="#" class="header-menu_btn js-toggle_class" data-class="active" data-target=".catalog_menu-wrap">
                         <i class="icon icon-burger"><hr><hr><hr></i>
                     </a>
                     <div class="logo">
@@ -57,6 +57,96 @@
                             <span class="icon-inner">2</span>
                         </i>
                     </a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog_menu-wrap">
+            <div class="container">
+                <div class="catalog_menu js-tabs" flex-wrap="wrap" flex-align="stretch">
+                    <div class="catalog_menu-nav">
+                        <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-1">
+                            <img src="./images/catalog-menu-item.png">
+                            <span>Товары для сна</span>
+                        </a>
+                        <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-2">
+                            <img src="./images/catalog-menu-item.png">
+                            <span>Товары для сна</span>
+                        </a>
+                        <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-3">
+                            <img src="./images/catalog-menu-item.png">
+                            <span>Товары для сна</span>
+                        </a>
+                        <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-4">
+                            <img src="./images/catalog-menu-item.png">
+                            <span>Товары для сна</span>
+                        </a>
+                        <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-5">
+                            <img src="./images/catalog-menu-item.png">
+                            <span>Товары для сна</span>
+                        </a>
+                    </div>
+                    <div class="catalog_menu-main" data-tab_content>
+                        <div id="catalog_menu-1" data-tab_item flex-wrap="wrap" flex-align="start" flex-text_align="start">
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                        </div>
+                        <div id="catalog_menu-2" data-tab_item flex-wrap="wrap" flex-align="start" flex-text_align="start">
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                            <a href="#" class="catalog_menu-item">
+                                <img src="./images/catalog-menu-item-2.png">
+                                <span>Матрасы</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,7 +222,7 @@
                 >
                     <div class="catalog_item">
                         <div class="catalog_item-block catalog_item-header" flex-align="center" flex-text_align="space-between">
-                            <a href="#">
+                            <a href="#" data-popup-open="#fast-product">
                                 <i class="icon icon-search"></i>
                                 <span>Быстрый просмотр</span>
                             </a>
@@ -1238,43 +1328,148 @@
                 <a href="#" class="popup_content-close" data-popup-close>
                     <i class="icon icon-close"></i>
                 </a>
-                <div class="popup_content-inner">
-                    <div class="js-tabs">
-                        <div class="content_tab" flex-align="center" flex-wrap="wrap" flex-text_align="space-between">
-                            <a href="#" class="content_tab-item" data-tab_target="#callback-form">Перезвоните мне</a>
-                            <a href="#" class="content_tab-item" data-tab_target="#question-form">Задать вопрос</a>
+                <div class="js-tabs">
+                    <div class="content_tab" flex-align="center" flex-wrap="wrap" flex-text_align="space-between">
+                        <a href="#" class="content_tab-item" data-tab_target="#callback-form">Перезвоните мне</a>
+                        <a href="#" class="content_tab-item" data-tab_target="#question-form">Задать вопрос</a>
+                    </div>
+                    <div data-tab_content>
+                        <div id="callback-form" data-tab_item>
+                            <form class="def_form">
+                                <div class="def_form-item">
+                                    <input type="text" placeholder="Ваше имя" class="col-lg-24 col-md-24 col-xs-24">
+                                </div>
+                                <div class="def_form-item">
+                                    <input type="tel" placeholder="Мобильный телефон" class="col-lg-24 col-md-24 col-xs-24">
+                                </div>
+                                <div class="def_form-item">
+                                    <button type="submit" class="btn col-lg-24 col-md-24 col-xs-24" align="center">Отправить заявку</button>
+                                </div>
+                            </form>
                         </div>
-                        <div data-tab_content>
-                            <div id="callback-form" data-tab_item>
-                                <form class="def_form">
-                                    <div class="def_form-item">
-                                        <input type="text" placeholder="Ваше имя" class="col-lg-24 col-md-24 col-xs-24">
-                                    </div>
-                                    <div class="def_form-item">
-                                        <input type="tel" placeholder="Мобильный телефон" class="col-lg-24 col-md-24 col-xs-24">
-                                    </div>
-                                    <div class="def_form-item">
-                                        <button type="submit" class="btn col-lg-24 col-md-24 col-xs-24" align="center">Отправить заявку</button>
-                                    </div>
-                                </form>
+                        <div id="question-form" data-tab_item>
+                            <form class="def_form">
+                                <div class="def_form-item">
+                                    <input type="text" placeholder="Ваше имя" class="col-lg-24 col-md-24 col-xs-24">
+                                </div>
+                                <div class="def_form-item">
+                                    <input type="email" placeholder="E-mail" class="col-lg-24 col-md-24 col-xs-24">
+                                </div>
+                                <div class="def_form-item">
+                                    <textarea class="col-lg-24 col-md-24 col-xs-24" placeholder="Ваш вопрос"></textarea>
+                                </div>
+                                <div class="def_form-item">
+                                    <button type="submit" class="btn col-lg-24 col-md-24 col-xs-24" align="center">Задать вопрос</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup_content-success" flex-align="center" flex-text_align="center" flex-wrap="wrap">
+                    <div>
+                        <div class="popup_content-success-title col-lg-24 col-md-24 col-xs-24">Спасибо!</div>
+                        <span>Менеджер перезвонит Вам <br>в ближайшее время.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fast-product" class="popup">
+        <div class="popup_wrapper">
+            <div class="popup_content product js-popup_content">
+                <a href="#" class="popup_content-close" data-popup-close>
+                    <i class="icon icon-close"></i>
+                </a>
+                <div class="product_preview" flex-align="stretch" flex-wrap="wrap">
+                    <div class="product_preview-img col-lg-13" flex-align="stretch" flex-wrap="wrap">
+                        <div class="product_preview-nav col-lg-4">
+                            <a href="#" class="product_preview-nav-item" style="background-image: url('./images/product-preview.png')"></a>
+                            <a href="#" class="product_preview-nav-item" style="background-image: url('./images/product-preview.png')"></a>
+                            <a href="#" class="product_preview-nav-item" style="background-image: url('./images/product-preview.png')"></a>
+                            <a href="#" class="product_preview-nav-item" style="background-image: url('./images/product-preview.png')"></a>
+                        </div>
+                        <div class="product_preview-img_big col-lg-20">
+                            <div class="product_preview-img_big-item" style="background-image: url('./images/product-detail.png')"></div>
+                            <!--div class="product_preview-img_big-item" style="background-image: url('./images/product-detail.png')"></div>
+                            <div class="product_preview-img_big-item" style="background-image: url('./images/product-detail.png')"></div>
+                            <div class="product_preview-img_big-item" style="background-image: url('./images/product-detail.png')"></div-->
+                        </div>
+                    </div>
+                    <div class="product_preview-description col-lg-11">
+                        <div class="catalog_item-block" flex-align="start" flex-text_align="space-between">
+                            <div class="btn mark grey_full col-lg-11" align="center">
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <span>(0)</span>
                             </div>
-                            <div id="question-form" data-tab_item>
-                                <form class="def_form">
-                                    <div class="def_form-item">
-                                        <input type="text" placeholder="Ваше имя" class="col-lg-24 col-md-24 col-xs-24">
-                                    </div>
-                                    <div class="def_form-item">
-                                        <input type="email" placeholder="E-mail" class="col-lg-24 col-md-24 col-xs-24">
-                                    </div>
-                                    <div class="def_form-item">
-                                        <textarea class="col-lg-24 col-md-24 col-xs-24" placeholder="Ваш вопрос"></textarea>
-                                    </div>
-                                    <div class="def_form-item">
-                                        <button type="submit" class="btn col-lg-24 col-md-24 col-xs-24" align="center">Задать вопрос</button>
-                                    </div>
-                                </form>
+                            <a href="#" class="btn grey_full col-lg-11" align="center">
+                                <i class="icon icon-favorite"></i>
+                                <span>Мне нравится</span>
+                            </a>
+                        </div>
+                        <div class="catalog_item-block">
+                            <small>Диван</small>
+                            <div>Beige</div>
+                        </div>
+                        <div class="catalog_item-block">
+                            <small>Цена</small>
+                            <div class="catalog_item-price">30 400 руб</div>
+                        </div>
+                        <div class="catalog_item-block">
+                            <small>Цвет</small>
+                            <div class="catalog_color" flex-align="start" flex-wrap="wrap">
+                                <a href="#" class="catalog_color-item" flex-align="center">
+                                    <span class="catalog_color-color" style="background-color: #ff9901"></span>
+                                    <span>Оранжевый</span>
+                                </a>
+                                <a href="#" class="catalog_color-item" flex-align="center">
+                                    <span class="catalog_color-color" style="background-color: blue"></span>
+                                    <span>Синий</span>
+                                </a>
                             </div>
                         </div>
+                        <div class="catalog_item-block">
+                            <div>Размеры</div>
+                            <div flex-align="start" flex-wrap="wrap" flex-text_align="space-between">
+                                <div class="col-lg-8">
+                                    <small>длина</small>
+                                    <span>200 см</span>
+                                </div>
+                                <div class="col-lg-8">
+                                    <small>ширина</small>
+                                    <span>96 см</span>
+                                </div>
+                                <div class="col-lg-8">
+                                    <small>высота</small>
+                                    <span>96 см</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog_item-block">
+                            <div>Спальное место</div>
+                            <div flex-align="start" flex-wrap="wrap" flex-text_align="space-between">
+                                <div class="col-lg-8">
+                                    <small>длина</small>
+                                    <span>200 см</span>
+                                </div>
+                                <div class="col-lg-8">
+                                    <small>ширина</small>
+                                    <span>96 см</span>
+                                </div>
+                                <div class="col-lg-8">
+                                    <small>высота</small>
+                                    <span>96 см</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div flex-align="start" flex-wrap="wrap" flex-text_align="space-between">
+                            <a href="#" class="btn col-lg-11" align="center">Узнать больше</a>
+                            <a href="#" class="btn color col-lg-11" align="center">Купить</a>
+                        </div>
+                        <div class="product_preview-additional"></div>
                     </div>
                 </div>
             </div>

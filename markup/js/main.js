@@ -93,6 +93,21 @@ $(document).ready(function(){
     })
     //end
 
+    //toggle class
+    $("body").on("click", ".js-toggle_class", function(e){
+        e.preventDefault();
+        var $target = $($(this).attr("data-target")),
+            className = $(this).attr("data-class");
+        if ($target.hasClass(className)) {
+            $target.removeClass(className);
+            $(this).removeClass(className);
+        } else {
+            $target.addClass(className);
+            $(this).addClass(className);
+        }
+    })
+    //end
+
     //gallery
     $("body").on("mouseover", ".js-gallery_item", function(){
         $(this).find(".animate-start").addClass("animate");
