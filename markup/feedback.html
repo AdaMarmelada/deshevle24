@@ -32,7 +32,7 @@
     <div class="header-part">
         <div class="container">
             <div flex-align="center" flex-wrap="wrap">
-                <a href="#" class="header-menu_btn">
+                <a href="#" class="header-menu_btn js-toggle_class" data-class="active" data-target=".catalog_menu-wrap">
                     <i class="icon icon-burger"><hr><hr><hr></i>
                 </a>
                 <div class="logo">
@@ -60,6 +60,96 @@
             </div>
         </div>
     </div>
+    <div class="catalog_menu-wrap">
+        <div class="container">
+            <div class="catalog_menu js-tabs" flex-wrap="wrap" flex-align="stretch">
+                <div class="catalog_menu-nav">
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-1">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-2">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-3">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-4">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-5">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                </div>
+                <div class="catalog_menu-main" data-tab_content>
+                    <div id="catalog_menu-1" data-tab_item flex-wrap="wrap" flex-align="start" flex-text_align="start">
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                    </div>
+                    <div id="catalog_menu-2" data-tab_item flex-wrap="wrap" flex-align="start" flex-text_align="start">
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 <main>
     <div class="breadcrumbs">
@@ -68,40 +158,67 @@
             <span>/Отзывы клиентов</span>
         </div>
     </div>
-    <div class="container">
-        <div class="delivery-payment title-2">Отзывы клиентов</div>
-        <div class="feedback-btn">
-            <a href="#" class="btn color btn-arrow" flex-text_align='end'>
-                <span>Оставить отзыв</span>
-                <i class="icon icon-arrow"></i>
-            </a>
-        </div>
-        <div class="feedback-list">
-            <div class="feedback-list-item">
-                <p>Иванов Максим</p>
-                <p>26.01.2019 12.30</p>
-                <img src="images/instagram-item.png">
-                <div class="feedback-stars"></div>
-                <div class="feedback-txt">
-                    <p>Все понравилось. Удобный диван, хорошая продавщица в салоне, няшные доставщики. Рекомендую!</p>
-                </div>
-                <div class="feedback-like">
-                    <p>Да, я рекомендую эту модель!</p>
-                </div>
+    <section class="section">
+        <div class="container">
+            <div class="title-2">Отзывы клиентов</div>
+            <div class="feedback-btn">
+                <a href="#" class="btn color btn-arrow" flex-text_align='end' data-popup-open="#myfeedback">
+                    <span>Оставить отзыв</span>
+                    <i class="icon icon-arrow"></i>
+                </a>
             </div>
-            <div class="feedback-list-item">
-                <p>Иванов Максим</p>
-                <p>26.01.2019 12.30</p>
-                <div class="feedback-stars"></div>
-                <div class="feedback-txt">
-                    <p>Все понравилось. Удобный диван, хорошая продавщица в салоне, няшные доставщики. Рекомендую!</p>
+
+            <div class="feedback-list">
+                <div class="feedback-list-item">
+                    <div flex-align="start" flex-text_align="space-between" flex-wrap="wrap">
+                        <div class="user-info col-lg-18" flex-align="start" flex-text_align="space-between" flex-wrap="wrap">
+                            <p>Иванов Максим</p>
+                            <p>26.01.2019 12.30</p>
+                            <div class="feedback-stars col-lg-24">
+                                <i class="icon icon-star-black"></i>
+                                <i class="icon icon-star-black"></i>
+                                <i class="icon icon-star-black"></i>
+                                <i class="icon icon-star-black"></i>
+                                <i class="icon icon-star-gray-empty"></i>
+                            </div>
+                            <div class="user-info-txt col-lg-24">
+                                <p>Все понравилось. Удобный диван, хорошая продавщица в салоне, няшные доставщики. Рекомендую!</p>
+                            </div>
+                            <div class="feedback-like col-lg-24" flex-align="start">
+                                <i class="icon icon-like-black"></i>
+                                <p>Да, я рекомендую эту модель!</p>
+                            </div>
+                        </div>
+                        <img src="images/instagram-item.png" class="col-lg-5">
+                    </div>
                 </div>
+                <div class="feedback-list-item">
+                        <div class="user-info col-lg-24" flex-align="start" flex-text_align="space-between" flex-wrap="wrap">
+                            <p>Иванов Максим</p>
+                            <p>26.01.2019 12.30</p>
+                            <div class="feedback-stars col-lg-24">
+                                <i class="icon icon-star-black"></i>
+                                <i class="icon icon-star-black"></i>
+                                <i class="icon icon-star-black"></i>
+                                <i class="icon icon-star-black"></i>
+                                <i class="icon icon-star-gray-empty"></i>
+                            </div>
+                            <div class="user-info-txt col-lg-24">
+                                <p>Все понравилось. Удобный диван, хорошая продавщица в салоне, няшные доставщики. Рекомендую!</p>
+                            </div>
+                            <div class="feedback-like col-lg-24" flex-align="start">
+                                <i class="icon icon-like-black"></i>
+                                <p>Да, я рекомендую эту модель!</p>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+            <div flex-align='center' flex-text_align='center'>
+            <a href="#" class="btn upper" align="center" data-popup-open="#">Все отзывы</a>
             </div>
         </div>
-        <div flex-align='center' flex-text_align='center'>
-        <a href="#" class="btn upper" align="center" data-popup-open="#">Все отзывы</a>
-        </div>
-    </div>
+    </section>
 </main>
 <footer class="footer">
     <div class="container" flex-align="start" flex-wrap="wrap" flex-text_align="space-between">
@@ -206,5 +323,122 @@
         <div class="col-lg-18" align="center">©2013-2019 Все права защищены. Все ресурсы сайта, включая текстовую, графическую и видео информацию, структуру и оформление страниц, защищены российскими и международными законами и соглашениями об охране авторских прав и интеллектуальной собственности (статьи 1259 и 1260 главы 70 "Авторское право" Гражданского Кодекса Российской Федерации от 18 декабря 2006 года N 230-ФЗ).</div>
     </div>
 </footer>
+<div id="callback" class="popup">
+    <div class="popup_wrapper">
+        <div class="popup_content js-popup_content">
+            <a href="#" class="popup_content-close" data-popup-close>
+                <i class="icon icon-close"></i>
+            </a>
+            <div class="js-tabs">
+                <div class="content_tab" flex-align="center" flex-wrap="wrap" flex-text_align="space-between">
+                    <a href="#" class="content_tab-item" data-tab_target="#callback-form">Перезвоните мне</a>
+                    <a href="#" class="content_tab-item" data-tab_target="#question-form">Задать вопрос</a>
+                </div>
+                <div data-tab_content>
+                    <div id="callback-form" data-tab_item>
+                        <form class="def_form">
+                            <div class="def_form-item">
+                                <input type="text" placeholder="Ваше имя" class="col-lg-24 col-md-24 col-xs-24">
+                            </div>
+                            <div class="def_form-item">
+                                <input type="tel" placeholder="Мобильный телефон" class="col-lg-24 col-md-24 col-xs-24">
+                            </div>
+                            <div class="def_form-item">
+                                <button type="submit" class="btn col-lg-24 col-md-24 col-xs-24" align="center">Отправить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="question-form" data-tab_item>
+                        <form class="def_form">
+                            <div class="def_form-item">
+                                <input type="text" placeholder="Ваше имя" class="col-lg-24 col-md-24 col-xs-24">
+                            </div>
+                            <div class="def_form-item">
+                                <input type="email" placeholder="E-mail" class="col-lg-24 col-md-24 col-xs-24">
+                            </div>
+                            <div class="def_form-item">
+                                <textarea class="col-lg-24 col-md-24 col-xs-24" placeholder="Ваш вопрос"></textarea>
+                            </div>
+                            <div class="def_form-item">
+                                <button type="submit" class="btn col-lg-24 col-md-24 col-xs-24" align="center">Задать вопрос</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_content-success" flex-align="center" flex-text_align="center" flex-wrap="wrap">
+                <div>
+                    <div class="popup_content-success-title col-lg-24 col-md-24 col-xs-24">Спасибо!</div>
+                    <span>Менеджер перезвонит Вам <br>в ближайшее время.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="myfeedback" class="popup">
+    <div class="popup_wrapper">
+        <div class="popup_content js-popup_content">
+            <a href="#" class="popup_content-close" data-popup-close>
+                <i class="icon icon-close"></i>
+            </a>
+            <div class="title-4">Мой отзыв</div>
+            <div>
+                <small>Диван</small>
+                <div>Beige</div>
+            </div>
+            <form class="def_form">
+                <div class="def_form-item">
+                    <input type="text" placeholder="Номер заказа" class="col-lg-24 col-md-24 col-xs-24">
+                </div>
+                <div class="def_form-item">
+                    <input type="text" placeholder="Ваше имя" class="col-lg-24 col-md-24 col-xs-24">
+                </div>
+                <div class="def_form-item">
+                    <textarea  name="Текст отзыва" class="col-lg-24 col-md-24 col-xs-24" placeholder="Текст отзыва"></textarea>
+                </div>
+                <div class="def_form-item col-lg-24" flex-align="start" flex-text_align="space-between" flex-wrap="wrap">
+                    <div class="def_form-item col-lg-15">
+                        <div>
+                            <span class="form-item-rate">Поставьте оценку</span>
+                            <a href="#"><i class="icon icon-star-gray-empty"></i></a>
+                            <a href="#"><i class="icon icon-star-gray-empty"></i></a>
+                            <a href="#"><i class="icon icon-star-gray-empty"></i></a>
+                            <a href="#"><i class="icon icon-star-gray-empty"></i></a>
+                            <a href="#"><i class="icon icon-star-gray-empty"></i></a>
+                        </div>
+                        <br>
+                        <div>Вы рекомендуете этот товар?</div>
+                        <br>
+                        <a href="#">
+                            <i class="icon icon-like-black"></i>
+                            <span>Да, я рекомендую эту модель!</span>
+                        </a>
+                        <br>
+                        <a href="#">
+                            <i class="icon icon-like-black"></i>
+                            <span>Я не рекомендую эту модель!</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="file_input">
+                            <label for="file">
+                                <i class="icon icon-file"></i>
+                                <small>Добавить<br>фотографию</small>
+                            </label>
+                            <input id="file" type="file">
+                        </div>
+                    </div>
+                </div>
+                <div class="def_form-item" flex-align="start" flex-text_align="space-between">
+                    <button type="submit" class="btn color col-lg-11 col-md-24 col-xs-24" align="center">Отправить отзыв</button>
+                    <button class="btn grey col-lg-11 col-md-24 col-xs-24" align="center" data-popup-close="myfeedback">Отменить</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="./libs/jquery1.12.4.js"></script>
+<script src="./js/modules/tabs/script.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
