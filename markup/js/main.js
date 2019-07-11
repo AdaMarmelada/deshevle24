@@ -18,7 +18,14 @@ $(document).ready(function(){
             dropdownContentHeight = $(this).outerHeight();
             if (dropdownContentHeight > 0) {
                 $(this).attr("data-height", dropdownContentHeight);
-                $(this).height(0);
+                if ($(this).attr("is-active") != "true") {
+                    $(this).height(0);
+                } else {
+                    var $parent = $(this).parents(".js-drop_down").first();
+                    $parent.find(".js-drop_down-btn").addClass("active");
+                    $parent.find(".js-drop_down-content").addClass("active");
+                    $(this).outerHeight($(this).attr("data-height"));
+                }
             }
         })
     })
@@ -45,7 +52,7 @@ $(document).ready(function(){
     $("body").on("click touchstart", function(e){
         if($(e.target).closest(".js-drop_down-btn").length > 0) return;
         if($(e.target).closest(".js-drop_down-content").length > 0) return;
-        $(".js-drop_down-content[data-height]").each(function(){
+        $(".js-drop_down-content[data-height]:not([is-active='true'])").each(function(){
             $dropdownWrap = $(this).parents(".js-drop_down").first();
             $dropdownWrap.find(".js-drop_down-btn").removeClass("active");
             $dropdownWrap.find(".js-drop_down-content").removeClass("active");

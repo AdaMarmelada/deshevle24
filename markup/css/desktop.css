@@ -15,6 +15,9 @@
     .col-lg-20{
         width:83.3333%;
     }
+    .col-lg-19{
+        width:79.1666%;
+    }
     .col-lg-18{
         width:75%;
     }
@@ -39,6 +42,9 @@
     .col-lg-8{
         width:33.3333%;
     }
+    .col-lg-7{
+        width:29.1666%;
+    }
     .col-lg-6{
         width:25%;
     }
@@ -62,28 +68,40 @@
         width: 85%;
     }
     .title-1{
-
+        font-size: 225%;
+    }
+    .title-1 + *{
+        margin-top: 40px;
     }
     .title-2{
         font-size: 175%;
-        margin-bottom: 20px;
     }
     .title-3{
-
+        font-size: 137.5%;
+    }
+    .title-2 + *,
+    .title-3 + *{
+        margin-top: 20px;
     }
     .title-4{
         font-size: 110%;
-        margin-bottom: 10px;
+    }
+    .title-4 + *{
+        margin-top: 5px;
     }
     .btn-arrow{
         padding-right: 131px;
     }
-    .btn .icon-arrow{
+    .btn .icon-arrow,
+    .btn .icon-arrow-orange{
         right: -1px;
         padding: 0 43px;
     }
     .section{
         padding: 55px 0;
+    }
+    .section_hr{
+        padding: 25px 0;
     }
     .input_icon > .icon{
         top: calc(50% - 6px);
@@ -153,15 +171,24 @@
     .main_slider-description-price{
         font-size: 170%;
     }
-    .catalog_slider{
-        margin: 0 -15px;
+    .catalog_slider,
+    .catalog_section{
+        margin-left: -15px;
+        margin-right: -15px;
     }
-    .catalog_item{
+    .catalog_item,
+    .catalog_section-item{
         padding: 30px;
-        margin: 0 15px;
     }
     .catalog_item:hover{
         padding-bottom: 0;
+    }
+    .catalog_slider .catalog_item,
+    .catalog_section .catalog_section-item{
+        margin: 0 15px;
+    }
+    [items-count] .catalog_item{
+        margin-bottom: 15px;
     }
     .catalog_item-img{
         height: 90px;
@@ -172,7 +199,8 @@
     .catalog_item-footer{
         padding: 0 30px 30px 30px;
     }
-    .catalog_item .btn{
+    .catalog_item .btn,
+    .catalog_detail-description-item .btn{
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -201,6 +229,9 @@
     .catalog_slider .slick-arrow.arrow-left:hover,
     .catalog_slider .slick-arrow.arrow-right:hover{
         background-position: 65% 50%;
+    }
+    .catalog_list-content + .catalog_list-content{
+        margin-top: 50px;
     }
     .banner {
         padding: 80px 100px;
@@ -233,11 +264,25 @@
     .popup_content.product{
         width: 80%;
     }
-    .content_tab{
+    .content_tab,
+    .catalog_detail-tab{
         margin-bottom: 30px;
+    }
+    .catalog_detail-tab-item:first-child{
+        text-align: right;
     }
     .footer {
         margin-top: 95px;
         padding-top: 65px;
+    }
+    .catalog_section-item{
+        width: calc(100%/6);
+    }
+    .catalog_detail{
+        margin-top: 30px;
+    }
+    .catalog_detail-description-item .btn{
+        padding-left: 20px;
+        padding-right: 111px;
     }
 }
