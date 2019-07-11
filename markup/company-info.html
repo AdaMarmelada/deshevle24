@@ -32,7 +32,7 @@
     <div class="header-part">
         <div class="container">
             <div flex-align="center" flex-wrap="wrap">
-                <a href="#" class="header-menu_btn">
+                <a href="#" class="header-menu_btn js-toggle_class" data-class="active" data-target=".catalog_menu-wrap">
                     <i class="icon icon-burger"><hr><hr><hr></i>
                 </a>
                 <div class="logo">
@@ -60,6 +60,96 @@
             </div>
         </div>
     </div>
+    <div class="catalog_menu-wrap">
+        <div class="container">
+            <div class="catalog_menu js-tabs" flex-wrap="wrap" flex-align="stretch">
+                <div class="catalog_menu-nav">
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-1">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-2">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-3">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-4">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-5">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                </div>
+                <div class="catalog_menu-main" data-tab_content>
+                    <div id="catalog_menu-1" data-tab_item flex-wrap="wrap" flex-align="start" flex-text_align="start">
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                    </div>
+                    <div id="catalog_menu-2" data-tab_item flex-wrap="wrap" flex-align="start" flex-text_align="start">
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 <main>
     <div class="breadcrumbs">
@@ -73,9 +163,9 @@
         <div class="container">
             <div class="title-1">О компании</div>
             <div class="delivery-payment-descr"><p>Мы - торгующая организация. 20 лет наша команда продает в Липецке поролон, мебельную ткань, кроватные основания,
-                латы, латодержатели, другие комплектующие - словом все, что используют для своего производства мебельные фабрики.</p></div>
+            латы, латодержатели, другие комплектующие - словом все, что используют для своего производства мебельные фабрики.</p></div>
             <div class="company-employees-photo">
-                <img src="images/employees.png">
+            <img src="images/employees.png">
             </div>
             <div class="company-info" flex-align="start">
                 <div class="company-info-item col-lg-12">
@@ -229,5 +319,60 @@
         <div class="col-lg-18" align="center">©2013-2019 Все права защищены. Все ресурсы сайта, включая текстовую, графическую и видео информацию, структуру и оформление страниц, защищены российскими и международными законами и соглашениями об охране авторских прав и интеллектуальной собственности (статьи 1259 и 1260 главы 70 "Авторское право" Гражданского Кодекса Российской Федерации от 18 декабря 2006 года N 230-ФЗ).</div>
     </div>
 </footer>
+<div id="callback" class="popup">
+    <div class="popup_wrapper">
+        <div class="popup_content js-popup_content">
+            <a href="#" class="popup_content-close" data-popup-close>
+                <i class="icon icon-close"></i>
+            </a>
+            <div class="js-tabs">
+                <div class="content_tab" flex-align="center" flex-wrap="wrap" flex-text_align="space-between">
+                    <a href="#" class="content_tab-item" data-tab_target="#callback-form">Перезвоните мне</a>
+                    <a href="#" class="content_tab-item" data-tab_target="#question-form">Задать вопрос</a>
+                </div>
+                <div data-tab_content>
+                    <div id="callback-form" data-tab_item>
+                        <form class="def_form">
+                            <div class="def_form-item">
+                                <input type="text" placeholder="Ваше имя" class="col-lg-24 col-md-24 col-xs-24">
+                            </div>
+                            <div class="def_form-item">
+                                <input type="tel" placeholder="Мобильный телефон" class="col-lg-24 col-md-24 col-xs-24">
+                            </div>
+                            <div class="def_form-item">
+                                <button type="submit" class="btn col-lg-24 col-md-24 col-xs-24" align="center">Отправить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="question-form" data-tab_item>
+                        <form class="def_form">
+                            <div class="def_form-item">
+                                <input type="text" placeholder="Ваше имя" class="col-lg-24 col-md-24 col-xs-24">
+                            </div>
+                            <div class="def_form-item">
+                                <input type="email" placeholder="E-mail" class="col-lg-24 col-md-24 col-xs-24">
+                            </div>
+                            <div class="def_form-item">
+                                <textarea class="col-lg-24 col-md-24 col-xs-24" placeholder="Ваш вопрос"></textarea>
+                            </div>
+                            <div class="def_form-item">
+                                <button type="submit" class="btn col-lg-24 col-md-24 col-xs-24" align="center">Задать вопрос</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_content-success" flex-align="center" flex-text_align="center" flex-wrap="wrap">
+                <div>
+                    <div class="popup_content-success-title col-lg-24 col-md-24 col-xs-24">Спасибо!</div>
+                    <span>Менеджер перезвонит Вам <br>в ближайшее время.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./libs/jquery1.12.4.js"></script>
+<script src="./js/modules/tabs/script.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

@@ -36,6 +36,9 @@ input, textarea, select, button{
 input, select, button{
     line-height: 1;
 }
+button {
+    background-color: transparent;
+}
 input, textarea{
     background-color: #fff;
     color: #848282;
@@ -677,12 +680,10 @@ hr.section_hr{
 .breadcrumbs {
     padding: 15px 0;
     background-color: #f5f5f5;
+    font-size: 12px;
 }
 .breadcrumbs a {
     color: #a4a4a4;
-}
-.delivery-payment.title-2 {
-    margin-top: 50px;
 }
 .delivery-payment-descr {
     width: 85%;
@@ -778,6 +779,121 @@ hr.section_hr{
     padding: 20px;
     margin-bottom: 30px;
 }
+.user-info-txt {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.feedback-list-item p {
+    margin-bottom: 0;
+}
+.feedback-list-item img {
+    height: 150px;
+}
+.feedback-stars {
+    margin-bottom: 15px;
+}
+.feedback-like {
+    font-size: 14px;
+}
+.feedback-like i {
+    margin-right: 10px;
+}
+.form-item-rate {
+    margin-right: 20px;
+}
+.file_input {
+
+}
+.file_input label {
+    display: block;
+    padding: 40px 0;
+    border: 1px solid #ebebeb;
+    line-height: 1.25;
+    text-align: center;
+}
+.file_input input[type='file'] {
+    display: none;
+}
+.basket-info {
+    margin-bottom: 40px;
+}
+.basket-txt {
+    padding: 30px 70px;
+    background-color: #e7fcff;
+    margin-top: 50px;
+    line-height: 1;
+}
+.basket-txt .catalog_item-price {
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #ebebeb;
+}
+.basket-txt .catalog_item-price > * {
+    position: relative;
+    z-index: 2;
+    top: 1px;
+    background-color: #e7fcff;
+}
+.basket-txt .catalog_item-price > *:first-child {
+    padding-right: 10px;
+}
+.basket-txt .catalog_item-price > *:last-child {
+    padding-left: 10px;
+}
+.basket-item {
+    padding: 100px;
+    border: 1px solid #ebebeb;
+}
+.basket-steps {
+    padding: 60px;
+    margin-top: 70px;
+    border: 1px solid #ebebeb;
+}
+.basket-steps-item {
+    margin-top: 20px;
+    padding: 50px 100px;
+}
+.basket-steps-item:first-child {
+    border-right: 1px solid #ebebeb;
+}
+.basket-steps-item:last-child {
+    border-top: 1px solid #ebebeb;
+}
+.basket-steps-item .catalog_item-price {
+    margin: 10px 0 30px 0;
+}
+.basket-steps-item .def_form-item + .def_form-item:last-child {
+    margin-top: 10px;
+}
+.step-label {
+    padding: 10px;
+    background-color: #a0a0a0;
+    color: #fff;
+}
+.step-label.active {
+    background-color: #e7fcff;
+    color: #000000;
+}
+.basket-icon {
+    margin: 30px 50px 65px 0;
+}
+.basket-icon:not(.active) {
+    opacity: 0.3;
+}
+.basket-icon img {
+    width: 64px;
+    margin-right: 15px;
+}
+.basket-payment {
+    margin-bottom: 95px;
+}
+.basket-txt-politic {
+    margin-top: 20px;
+}
+.basket-txt-politic a {
+    text-decoration: underline;
+}
+
 .catalog_section{
 
 }

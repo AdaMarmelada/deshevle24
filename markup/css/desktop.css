@@ -42,7 +42,7 @@
     .col-lg-8{
         width:33.3333%;
     }
-    .col-lg-7{
+    .col-lg-7 {
         width:29.1666%;
     }
     .col-lg-6{
@@ -258,7 +258,7 @@
     }
     .popup_content {
         padding: 30px 40px;
-        width: 440px;
+        width: 660px;
         max-height: 90%;
     }
     .popup_content.product{
