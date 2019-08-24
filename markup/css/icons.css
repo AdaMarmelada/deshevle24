@@ -84,23 +84,31 @@
     background-size: 18px 13px;
     background-position: 50% 50%;
 }
-.icon-arrow{
+.icon-arrow,
+.btn:hover .icon-arrow-orange{
     background-image: url('../images/icons/right-arrow.png');
 }
 .icon-arrow-orange{
     background-image: url('../images/icons/right-arrow-orange.png');
 }
-.btn .icon-arrow{
+.btn .icon-arrow,
+.btn .icon-arrow-orange{
     position: absolute;
     top: -1px;
     height: calc(100% + 2px);
-    background-color: #f56d01;
-    border-left: 1px solid #fff;
+    border-left: 1px solid #f56d01;
     transition-property: background-position, box-shadow;
     transition-duration: .3s;
 }
-.btn:hover .icon-arrow{
+.btn.color .icon-arrow,
+.btn.color .icon-arrow-orange{
+    background-color: #f56d01;
+    border-color: #fff;
+}
+.btn:hover .icon-arrow,
+.btn:hover .icon-arrow-orange{
     background-position: 65% 50%;
+    border-color: #fff;
 }
 .icon-chat{
     width: 18px;
