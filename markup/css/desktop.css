@@ -198,6 +198,10 @@
     }
     .catalog_item:hover{
         padding-bottom: 0;
+        box-shadow: 0px 15px 15px #adabab;
+    }
+    .catalog_item:hover .catalog_item-header{
+        opacity: 1;
     }
     .catalog_slider .catalog_item,
     .catalog_section .catalog_section-item{

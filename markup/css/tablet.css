@@ -195,8 +195,9 @@
     .catalog_section-item{
         padding: 30px;
     }
-    .catalog_item:hover{
+    .catalog_item.active{
         padding-bottom: 0;
+        box-shadow: 0px 15px 15px #adabab;
     }
     .catalog_slider .catalog_item,
     .catalog_section .catalog_section-item{
@@ -248,6 +249,9 @@
     .catalog_list-content + .catalog_list-content{
         margin-top: 50px;
     }
+    .catalog_item.active .catalog_item-header{
+        opacity: 1;
+    }
     .catalog_item .btn
     .catalog_item-block{
         margin-bottom: 20px;
@@ -263,7 +267,7 @@
         width: 100%;
         background-color: #fff;
     }
-    .catalog_item:hover .catalog_item-footer{
+    .catalog_item.active .catalog_item-footer{
         display: block;
         box-shadow: 0px 16px 15px #adabab;
         z-index: 1;
@@ -272,7 +276,7 @@
         padding: 40px 50px;
     }
     .banner-title{
-        font-size: 190%;
+        font-size: 170%;
     }
     .gallery-item{
         width: 50%;

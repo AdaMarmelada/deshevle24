@@ -308,9 +308,6 @@ hr.section_hr{
     font-size: 90%;
     background-color: #fff;
 }
-.catalog_item:hover{
-    box-shadow: 0px 15px 15px #adabab;
-}
 [items-count="3"] .catalog_item{
     width: calc(33.3333% - 10px);
 }
@@ -334,9 +331,6 @@ hr.section_hr{
     opacity: 0;
     transition: opacity .3s;
 }
-.catalog_item:hover .catalog_item-header{
-    opacity: 1;
-}
 .catalog_slider{
     position: relative;
     z-index: 1;
@@ -353,6 +347,8 @@ hr.section_hr{
 }
 .banner-title{
     font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 .gallery{
 
