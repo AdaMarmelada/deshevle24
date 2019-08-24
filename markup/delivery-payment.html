@@ -32,7 +32,7 @@
     <div class="header-part">
         <div class="container">
             <div flex-align="center" flex-wrap="wrap">
-                <a href="#" class="header-menu_btn">
+                <a href="#" class="header-menu_btn js-toggle_class" data-class="active" data-target=".catalog_menu-wrap">
                     <i class="icon icon-burger"><hr><hr><hr></i>
                 </a>
                 <div class="logo">
@@ -60,6 +60,96 @@
             </div>
         </div>
     </div>
+    <div class="catalog_menu-wrap">
+        <div class="container">
+            <div class="catalog_menu js-tabs" flex-wrap="wrap" flex-align="stretch">
+                <div class="catalog_menu-nav">
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-1">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-2">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-3">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-4">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                    <a href="#" class="catalog_menu-nav-item" data-tab_target="#catalog_menu-5">
+                        <img src="./images/catalog-menu-item.png">
+                        <span>Товары для сна</span>
+                    </a>
+                </div>
+                <div class="catalog_menu-main" data-tab_content>
+                    <div id="catalog_menu-1" data-tab_item flex-wrap="wrap" flex-align="start" flex-text_align="start">
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                    </div>
+                    <div id="catalog_menu-2" data-tab_item flex-wrap="wrap" flex-align="start" flex-text_align="start">
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                        <a href="#" class="catalog_menu-item">
+                            <img src="./images/catalog-menu-item-2.png">
+                            <span>Матрасы</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 <main>
     <div class="breadcrumbs">
@@ -68,61 +158,63 @@
             <span>/Доставка и оплата</span>
         </div>
     </div>
-    <div class="container">
-        <div class="delivery-payment title-2">Доставка и оплата</div>
-        <div class="delivery-payment-descr"><p>Мы осуществляем доставку по Липецку и Липецкой области. Также, в случае необходимости, вы можете забрать свой
-            заказ в пункте самовывоза. Конкретные подробности, касающиеся вашего заказа, лучше обсуждать при покупке с нашим сотрудником.</p></div>
-        <div class="delivery-payment-info">
-            <div class="delivery-payment-info-item">
-                <div class="title-4">Просим обратить внимание:</div>
-                <p>Работы по освобождению проходов помещений от хлама,
-                    демонтаж дверей и т.д - в цену подъема не входят.</p>
-                <p>Чтобы нам легко и быстро занести диван в комнату,
-                    размеры проемов Ваших дверей должны быть
-                    не меньше 77x192 см, а ширина коридора
-                    любого другого похода не меньше 107см.</p>
-                <p>У нашего транспорта должна быть возможность подъехать
-                    к месту выгрузки. Если грузчики пронесли мебель вручную
-                    более 20 метров, то дальнейшее расстояние оплачивается
-                    из расчета: 300 рублей за каждые 15 метров.</p>
+    <section class="section">
+        <div class="container">
+            <div class="title-2">Доставка и оплата</div>
+            <div class="delivery-payment-descr"><p>Мы осуществляем доставку по Липецку и Липецкой области. Также, в случае необходимости, вы можете забрать свой
+                заказ в пункте самовывоза. Конкретные подробности, касающиеся вашего заказа, лучше обсуждать при покупке с нашим сотрудником.</p></div>
+            <div class="delivery-payment-info">
+                <div class="delivery-payment-info-item">
+                    <div class="title-4">Просим обратить внимание:</div>
+                    <p>Работы по освобождению проходов помещений от хлама,
+                        демонтаж дверей и т.д - в цену подъема не входят.</p>
+                    <p>Чтобы нам легко и быстро занести диван в комнату,
+                        размеры проемов Ваших дверей должны быть
+                        не меньше 77x192 см, а ширина коридора
+                        любого другого похода не меньше 107см.</p>
+                    <p>У нашего транспорта должна быть возможность подъехать
+                        к месту выгрузки. Если грузчики пронесли мебель вручную
+                        более 20 метров, то дальнейшее расстояние оплачивается
+                        из расчета: 300 рублей за каждые 15 метров.</p>
+                </div>
+                <div class="delivery-payment-info-item">
+                    <img src="images/delivery-boxes.png">
+                </div>
             </div>
-            <div class="delivery-payment-info-item">
-                <img src="images/delivery-boxes.png">
-            </div>
-        </div>
-        <div class="delivery-payment-table" flex-align="start" flex-text_align="space-between">
-            <table class="col-lg-18">
-                 <tr>
-                     <td rowspan="2">груз</td>
-                     <td colspan="2">подъем и занос</td>
-                     <td rowspan="2">сборка диванов</td>
-                 </tr>
-                 <tr>
-                     <td>грузовой лифт</td>
-                     <td>ручной подъём</td>
-                 </tr>
-                 <tr>
-                     <td>прямой диван</td>
-                     <td rowspan="3">450 руб.</td>
-                     <td>200 руб. этаж</td>
-                     <td rowspan="3">450 руб.</td>
-                 </tr>
-                 <tr>
-                     <td>угловой диван</td>
-                     <td>250 руб. этаж</td>
-                 </tr>
-                 <tr>
-                     <td>кресло, пуф</td>
-                     <td>100 руб. этаж</td>
-                 </tr>
-             </table>
-            <div class="delivery-payment-table-descr col-lg-5">
-                <p>*Зависит от наличия в доме грузового лифта и веса предмета мебели.</p>
-                <p>*Для покупателей, проживающих в частных домах или на первом этаже, занос стоит 450 рублей.</p>
-            </div>
+            <div class="delivery-payment-table" flex-align="start" flex-text_align="space-between">
+                <table class="col-lg-18">
+                     <tr>
+                         <td rowspan="2">груз</td>
+                         <td colspan="2">подъем и занос</td>
+                         <td rowspan="2">сборка диванов</td>
+                     </tr>
+                     <tr>
+                         <td>грузовой лифт</td>
+                         <td>ручной подъём</td>
+                     </tr>
+                     <tr>
+                         <td>прямой диван</td>
+                         <td rowspan="3">450 руб.</td>
+                         <td>200 руб. этаж</td>
+                         <td rowspan="3">450 руб.</td>
+                     </tr>
+                     <tr>
+                         <td>угловой диван</td>
+                         <td>250 руб. этаж</td>
+                     </tr>
+                     <tr>
+                         <td>кресло, пуф</td>
+                         <td>100 руб. этаж</td>
+                     </tr>
+                 </table>
+                <div class="delivery-payment-table-descr col-lg-5">
+                    <p>*Зависит от наличия в доме грузового лифта и веса предмета мебели.</p>
+                    <p>*Для покупателей, проживающих в частных домах или на первом этаже, занос стоит 450 рублей.</p>
+                </div>
 
+            </div>
         </div>
-    </div>
+    </section>
 </main>
 <footer class="footer">
     <div class="container" flex-align="start" flex-wrap="wrap" flex-text_align="space-between">
@@ -227,5 +319,60 @@
         <div class="col-lg-18" align="center">©2013-2019 Все права защищены. Все ресурсы сайта, включая текстовую, графическую и видео информацию, структуру и оформление страниц, защищены российскими и международными законами и соглашениями об охране авторских прав и интеллектуальной собственности (статьи 1259 и 1260 главы 70 "Авторское право" Гражданского Кодекса Российской Федерации от 18 декабря 2006 года N 230-ФЗ).</div>
     </div>
 </footer>
+<div id="callback" class="popup">
+    <div class="popup_wrapper">
+        <div class="popup_content js-popup_content">
+            <a href="#" class="popup_content-close" data-popup-close>
+                <i class="icon icon-close"></i>
+            </a>
+            <div class="js-tabs">
+                <div class="content_tab" flex-align="center" flex-wrap="wrap" flex-text_align="space-between">
+                    <a href="#" class="content_tab-item" data-tab_target="#callback-form">Перезвоните мне</a>
+                    <a href="#" class="content_tab-item" data-tab_target="#question-form">Задать вопрос</a>
+                </div>
+                <div data-tab_content>
+                    <div id="callback-form" data-tab_item>
+                        <form class="def_form">
+                            <div class="def_form-item">
+                                <input type="text" placeholder="Ваше имя" class="col-lg-24 col-md-24 col-xs-24">
+                            </div>
+                            <div class="def_form-item">
+                                <input type="tel" placeholder="Мобильный телефон" class="col-lg-24 col-md-24 col-xs-24">
+                            </div>
+                            <div class="def_form-item">
+                                <button type="submit" class="btn col-lg-24 col-md-24 col-xs-24" align="center">Отправить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="question-form" data-tab_item>
+                        <form class="def_form">
+                            <div class="def_form-item">
+                                <input type="text" placeholder="Ваше имя" class="col-lg-24 col-md-24 col-xs-24">
+                            </div>
+                            <div class="def_form-item">
+                                <input type="email" placeholder="E-mail" class="col-lg-24 col-md-24 col-xs-24">
+                            </div>
+                            <div class="def_form-item">
+                                <textarea class="col-lg-24 col-md-24 col-xs-24" placeholder="Ваш вопрос"></textarea>
+                            </div>
+                            <div class="def_form-item">
+                                <button type="submit" class="btn col-lg-24 col-md-24 col-xs-24" align="center">Задать вопрос</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_content-success" flex-align="center" flex-text_align="center" flex-wrap="wrap">
+                <div>
+                    <div class="popup_content-success-title col-lg-24 col-md-24 col-xs-24">Спасибо!</div>
+                    <span>Менеджер перезвонит Вам <br>в ближайшее время.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./libs/jquery1.12.4.js"></script>
+<script src="./js/modules/tabs/script.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

@@ -51,7 +51,8 @@
 }
 .icon-favorite,
 .icon-favorite-white,
-.icon-favorite-full{
+.icon-favorite-full,
+.icon-like-black {
     width: 18px;
     height: 18px;
 }
@@ -60,6 +61,9 @@
 }
 .icon-favorite-white{
     background-image: url('../images/icons/favorite-white.png');
+}
+.icon-like-black {
+    background-image: url('../images/icons/icon-like-black.png');
 }
 .gallery-item:hover .icon-favorite-white,
 .btn:hover .icon-favorite{
@@ -140,7 +144,10 @@
     transform: rotate(45deg);
 }
 .icon-star,
-.icon-star_full{
+.icon-star_full,
+.icon-star-gray-empty,
+.icon-star-black
+{
     width: 18px;
     height: 18px;
 }
@@ -149,4 +156,15 @@
 }
 .icon-star_full{
     background-image: url('../images/icons/star-full.png');
+}
+.icon-star-gray-empty {
+    background-image: url('../images/icons/icon-gray-empty.png');
+}
+.icon-star-black {
+    background-image: url('../images/icons/icon-star-black.png');
+}
+.icon-file {
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/icons/picture.svg');
 }
